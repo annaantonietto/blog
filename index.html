@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Blog da Anna Lívia</h1>
+            <p>Compartilhando minha vida</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h2 class="post-title">Meu blog</h2>
+            <div class="post-meta">Postado em 7 de Julho de 2026 por Matheus</div>
+            
+            <div class="post-content">
+                <p>Olá, estou criando meu primeiro blog para compartilhar histórias, meu hobbies e minha vida</p>
+                <h2>Sobre mim</h2>
+                <p>Me chamo Anna lívia, tenho 15 anos, sou uma menina  engraçada e divertida, tenho vários hobbies, mas um deles é ficar com meus amigos, teatro, etc. Além disso sou descendente de britânico e italiano, sou poliglota</p>
+                <h2>Onde moro?</h2>
+                <p>Sou nascida e moro em Londrina-PR</p>
+                <h2>Meus sonhos</h2>
+                <p>Sonho em fazer um intercâmbio pro canadá e formar uma familia</p>
+            </div>
+
+            <div class="post-actions">
+                <button id="like-btn" class="action-btn">
+                    <i class="fa-regular fa-thumbs-up"></i> <span id="like-count">12</span>
+                </button>
+                <button id="dislike-btn" class="action-btn">
+                    <i class="fa-regular fa-thumbs-down"></i> <span id="dislike-count">2</span>
+                </button>
+            </div>
+        </article>
+
+        <section class="comments-section">
+            <h3>Comentários</h3>
+            
+            <form id="comment-form">
+                <div class="form-group">
+                    <input type="text" id="comment-name" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="comment-text" placeholder="Escreva seu comentário aqui..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Comentário</button>
+            </form>
+
+            <div id="comments-list">
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">Ana Silva</span>
+                        <span class="comment-date">Agora mesmo</span>
+                    </div>
+                    <p class="comment-body">Parabéns pelo blog! O design clean ficou excelente.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meu Blog Pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
